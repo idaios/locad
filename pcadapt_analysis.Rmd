@@ -3,8 +3,10 @@ title: "pcadapt_Protocol"
 author: "Pavlos Pavlidis"
 date: "11/5/2017"
 output: html_document
+fig_width: 6 
+fig_height: 4 
 ---
-
+  
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -31,6 +33,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 
 Now, we will make a normal distribution
+knitr::opts_chunk$set(fig.width=12, fig.height=8) 
 ```{r normal, echo=FALSE}
 x <- rnorm(100, 1, 0)
 hist(x)
